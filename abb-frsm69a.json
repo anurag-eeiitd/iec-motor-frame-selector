@@ -1,0 +1,918 @@
+{
+  "source": {
+    "title": "ABB IEC LV Motors, India Price List",
+    "edition": "FRSM69A",
+    "effectiveDate": "2026-09-01",
+    "pages": [
+      10,
+      11,
+      12,
+      14,
+      15,
+      16
+    ],
+    "scope": "10–50 HP; 2, 4 and 6 poles; IE3 and IE4"
+  },
+  "motors": [
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 10.0,
+      "kw": 7.5,
+      "model": "M2BAX132SB2",
+      "frame": "132S",
+      "priceInr": 132700,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7314&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500013-519&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9596&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX132SD2",
+      "frame": "132S",
+      "priceInr": 168200,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9860&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500013-519&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9596&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX160MLJ2",
+      "frame": "160ML",
+      "priceInr": 211200,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7315&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 15.0,
+      "kw": 11.0,
+      "model": "M2BAX160MLA2",
+      "frame": "160ML",
+      "priceInr": 225400,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7316&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 20.0,
+      "kw": 15.0,
+      "model": "M2BAX160MLB2",
+      "frame": "160ML",
+      "priceInr": 256900,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7317&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 25.0,
+      "kw": 18.5,
+      "model": "M2BAX160MLC2",
+      "frame": "160ML",
+      "priceInr": 309700,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7318&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 30.0,
+      "kw": 22.0,
+      "model": "M2BAX180MLA2",
+      "frame": "180ML",
+      "priceInr": 335800,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7319&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500018-596&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 40.0,
+      "kw": 30.0,
+      "model": "M2BAX200MLA2",
+      "frame": "200ML",
+      "priceInr": 488200,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7320&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 2,
+      "hp": 50.0,
+      "kw": 37.0,
+      "model": "M2BAX200MLB2",
+      "frame": "200ML",
+      "priceInr": 570100,
+      "sourcePage": 10,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7321&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 10.0,
+      "kw": 7.5,
+      "model": "M2BAX132SMA4",
+      "frame": "132SM",
+      "priceInr": 132800,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7363&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500013-519&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9596&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX132SMB4",
+      "frame": "132SM",
+      "priceInr": 146200,
+      "sourcePage": 11,
+      "notes": [
+        "Suitable for Class F temperature rise only (catalogue * footnote)."
+      ],
+      "documents": {
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9596&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX160MLJ4",
+      "frame": "160ML",
+      "priceInr": 223400,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108473A1109&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500013-519&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 15.0,
+      "kw": 11.0,
+      "model": "M2BAX160MLA4",
+      "frame": "160ML",
+      "priceInr": 224600,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7365&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 20.0,
+      "kw": 15.0,
+      "model": "M2BAX160MLB4",
+      "frame": "160ML",
+      "priceInr": 269400,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7366&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 25.0,
+      "kw": 18.5,
+      "model": "M2BAX180MLA4",
+      "frame": "180ML",
+      "priceInr": 331900,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7367&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500018-596&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 30.0,
+      "kw": 22.0,
+      "model": "M2BAX180MLB4",
+      "frame": "180ML",
+      "priceInr": 356100,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7368&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500018-596&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 40.0,
+      "kw": 30.0,
+      "model": "M2BAX200MLA4",
+      "frame": "200ML",
+      "priceInr": 483000,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7369&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 4,
+      "hp": 50.0,
+      "kw": 37.0,
+      "model": "M2BAX225SMA4",
+      "frame": "225SM",
+      "priceInr": 608300,
+      "sourcePage": 11,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7370&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500022-703&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 10.0,
+      "kw": 7.5,
+      "model": "M2BAX160MLA6",
+      "frame": "160ML",
+      "priceInr": 208900,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7456&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX160MLJ6",
+      "frame": "160ML",
+      "priceInr": 250900,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7458&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 15.0,
+      "kw": 11.0,
+      "model": "M2BAX160MLB6",
+      "frame": "160ML",
+      "priceInr": 263400,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7457&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 20.0,
+      "kw": 15.0,
+      "model": "M2BAX180MLA6",
+      "frame": "180ML",
+      "priceInr": 343100,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7459&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 25.0,
+      "kw": 18.5,
+      "model": "M2BAX200MLA6",
+      "frame": "200ML",
+      "priceInr": 444700,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7460&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 30.0,
+      "kw": 22.0,
+      "model": "M2BAX200MLB6",
+      "frame": "200ML",
+      "priceInr": 478400,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7461&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 40.0,
+      "kw": 30.0,
+      "model": "M2BAX225SMA6",
+      "frame": "225SM",
+      "priceInr": 688600,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7462&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500022-703&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE3",
+      "poles": 6,
+      "hp": 50.0,
+      "kw": 37.0,
+      "model": "M2BAX250SMA6",
+      "frame": "250SM",
+      "priceInr": 873000,
+      "sourcePage": 12,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7463&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500025-549&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 10.0,
+      "kw": 7.5,
+      "model": "M2BAX132SB2",
+      "frame": "132S",
+      "priceInr": 167600,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7690&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500013-425&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9596&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX160MLJ2",
+      "frame": "160ML",
+      "priceInr": 263400,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7691&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 15.0,
+      "kw": 11.0,
+      "model": "M2BAX160MLA2",
+      "frame": "160ML",
+      "priceInr": 286400,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7692&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 20.0,
+      "kw": 15.0,
+      "model": "M2BAX160MLB2",
+      "frame": "160ML",
+      "priceInr": 320300,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7693&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 25.0,
+      "kw": 18.5,
+      "model": "M2BAX160MLC2",
+      "frame": "160ML",
+      "priceInr": 393300,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7694&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 30.0,
+      "kw": 22.0,
+      "model": "M2BAX180MLA2",
+      "frame": "180ML",
+      "priceInr": 426700,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7695&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500018-596&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 40.0,
+      "kw": 30.0,
+      "model": "M2BAX200MLA2",
+      "frame": "200ML",
+      "priceInr": 620000,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7696&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 2,
+      "hp": 50.0,
+      "kw": 37.0,
+      "model": "M2BAX200MLB2",
+      "frame": "200ML",
+      "priceInr": 723900,
+      "sourcePage": 14,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7697&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 10.0,
+      "kw": 7.5,
+      "model": "M2BAX132SMA4",
+      "frame": "132SM",
+      "priceInr": 167800,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7718&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500013-425&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9596&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX160MLJ4",
+      "frame": "160ML",
+      "priceInr": 283800,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7719&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 15.0,
+      "kw": 11.0,
+      "model": "M2BAX160MLA4",
+      "frame": "160ML",
+      "priceInr": 293500,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7720&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 20.0,
+      "kw": 15.0,
+      "model": "M2BAX160MLB4",
+      "frame": "160ML",
+      "priceInr": 355000,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7721&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 25.0,
+      "kw": 18.5,
+      "model": "M2BAX180MLA4",
+      "frame": "180ML",
+      "priceInr": 437600,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7724&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9575&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 30.0,
+      "kw": 22.0,
+      "model": "M2BAX180MLB4",
+      "frame": "180ML",
+      "priceInr": 465300,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7723&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9575&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 40.0,
+      "kw": 30.0,
+      "model": "M2BAX200MLA4",
+      "frame": "200ML",
+      "priceInr": 624900,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7725&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 4,
+      "hp": 50.0,
+      "kw": 37.0,
+      "model": "M2BAX225SMA4",
+      "frame": "225SM",
+      "priceInr": 772500,
+      "sourcePage": 15,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7726&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500022-703&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 10.0,
+      "kw": 7.5,
+      "model": "M2BAX160MLA6",
+      "frame": "160ML",
+      "priceInr": 270300,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7777&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500016-896&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 12.5,
+      "kw": 9.3,
+      "model": "M2BAX160MLJ6",
+      "frame": "160ML",
+      "priceInr": 321800,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7780&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9589&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 15.0,
+      "kw": 11.0,
+      "model": "M2BAX160MLB6",
+      "frame": "160ML",
+      "priceInr": 350400,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7783&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A9589&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 20.0,
+      "kw": 15.0,
+      "model": "M2BAX180MLA6",
+      "frame": "180ML",
+      "priceInr": 435800,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7784&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500018-596&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101716-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 25.0,
+      "kw": 18.5,
+      "model": "M2BAX200MLA6",
+      "frame": "200ML",
+      "priceInr": 564900,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7785&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 30.0,
+      "kw": 22.0,
+      "model": "M2BAX200MLB6",
+      "frame": "200ML",
+      "priceInr": 607500,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7787&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 40.0,
+      "kw": 30.0,
+      "model": "M2BAX225SMA6",
+      "frame": "225SM",
+      "priceInr": 874500,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7786&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500020-553&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    },
+    {
+      "manufacturer": "ABB",
+      "series": "M2BAX",
+      "efficiency": "IE4",
+      "poles": 6,
+      "hp": 50.0,
+      "kw": 37.0,
+      "model": "M2BAX250SMA6",
+      "frame": "250SM",
+      "priceInr": 1108500,
+      "sourcePage": 16,
+      "notes": [],
+      "documents": {
+        "datasheet": "https://search.abb.com/library/Download.aspx?DocumentID=9AKK108472A7788&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "drawing": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH500025-550&LanguageCode=en&DocumentPartId=&Action=Launch",
+        "terminalBox": "https://search.abb.com/library/Download.aspx?DocumentID=3GZH101722-15&LanguageCode=en&DocumentPartId=&Action=Launch"
+      }
+    }
+  ]
+}
