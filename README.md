@@ -1,53 +1,60 @@
-# IEC motor frame selector
+# IEC motor frame and price selector
 
-A static, responsive ABB frame selector for line-operated induction motors. Scope: **10–50 HP**, **2/4/6 poles**, **IE3/IE4**.
+A responsive tool for line-operated induction motors: **10–50 HP**, **2/4/6 poles**, **IE3/IE4**. Select ABB, Innomotics or Crompton / CG individually, or compare all three. Select one efficiency class or compare both.
 
-Source: the user-supplied **ABB IEC LV Motors, India Price List, FRSM69A, effective 1 September 2026**, pages **10–12 and 14–16**. Page 13 contains 8-pole motors and is excluded. The source PDF is not published in this repository.
+Live tool: https://anurag-eeiitd.github.io/iec-motor-frame-selector/
 
-## Use the tool
+## Results and scope
 
-Enter HP, choose poles or the equivalent 50 Hz synchronous speed, select IE3, IE4 or both, and select **Find frame**. The result includes the ABB frame designation, complete motor type, paired catalogue kW, catalogue INR list price, source page and available ABB document links. Unsupported HP values show nearby catalogue ratings without automatic rounding or interpolation.
+Results show the normalized IEC frame from the supplied comparison, exact manufacturer frame, full ordering / catalogue reference, paired HP/kW, INR catalogue list price, product family, source page and ordering restrictions. All alternatives are retained. ABB document links remain available where present in the supplied PDF.
 
-The supported HP values are 10, 12.5, 15, 20, 25, 30, 40 and 50. The catalogue contains **50 rows** for the 48 rating/class/pole combinations because IE3 has alternate types at 12.5 HP for 2 and 4 poles. The IE3 12.5 HP / 4-pole M2BAX132SMB4 entry retains the catalogue’s Class F temperature-rise restriction.
+Prices are catalogue list prices, before discounts and applicable taxes. They are not quotations. Frame comparison does not establish dimensional interchangeability: check mounting, shaft dimensions and application conditions with each manufacturer. Speeds are synchronous speeds at 50 Hz, not loaded running speeds.
 
-Frame designations such as `160ML` are derived from ABB motor types by removing the series prefix, winding variant letter and pole digit. They retain ABB's notation; they do not establish dimensional interchangeability. The complete type remains visible. Confirm mounting and shaft dimensions using the GA drawing. Running speed is lower than synchronous speed; the supplied tables do not specify rated loaded RPM.
+Supported HP ratings: 10, 12.5, 15, 20, 25, 30, 40 and 50. Exact ratings only, with no interpolation or automatic rounding. The data contains **143 listed motors** and **4 explicit unavailable Innomotics combinations**. A missing listing refers to the selected family, not every motor sold by the company.
 
-The source configuration is 415 V ±10%, 50 Hz ±5%, horizontal foot mounting, TEFC, IP55, continuous duty, Class F insulation, 50°C ambient and altitude below 1000 m above mean sea level. The catalogue states IEC 60034-1 and IS 12615:2018. Document URLs are extracted from PDF annotations; missing links are omitted rather than invented. Remote ABB document availability has not been verified.
+## Sources
+
+The user-supplied ABB_Innomotics_CG_IE3_IE4_10-50HP_Comparison.xlsx, Source Details sheet, supplies the comparison records. The source workbook and PDFs are not published. Derived records include source sheet and row references.
+
+| Manufacturer | Selected family | Catalogue |
+| --- | --- | --- |
+| ABB | M2BAX Safe Area | FRSM69A, effective 1 September 2026; IE3 pp. 10–12, IE4 pp. 14–16 |
+| Innomotics | 1LE7 Severe Duty, cast iron | LP-210, effective 14 August 2026; IE3 CE-compliant pp. 18–19, IE4 pp. 15–16 |
+| Crompton / CG | Premium Efficiency IE3 Cast Iron; Super Premium IE4 | LTM27, effective 2 September 2026; printed pp. 15 and 14 |
+
+CG 10 HP IE4 2- and 4-pole entries use AXELERA Process Performance on printed p. 13, as directed by the Super Premium table. CG PDF page numbers are one higher than printed page numbers. Starred special-order entries retain the catalogue's Indent note. ABB's smaller 12.5 HP / 4-pole IE3 option retains its Class F temperature-rise restriction.
+
+The selected families cover foot-mounted, IP55, continuous / S1, 415 V, 50 Hz, 50°C ambient motors. Construction and ordering details differ between families. Innomotics and CG ordering codes and prices were verified against the supplied PDF pages. Original ABB records, prices, document URLs and restrictions were reconciled with the workbook. Remote document availability has not been verified.
 
 ## Run locally
 
-Node.js 22 or newer, with no external npm dependencies:
+Node.js 22 or newer. No external npm dependencies are required by the app.
 
 ```sh
 npm start
 ```
 
-Open `http://127.0.0.1:4173`. The server serves only the copied website assets in `public/`, not the repository or source documents. JavaScript modules and JSON loading require HTTP; do not open `index.html` using `file://`.
+Open http://127.0.0.1:4173. The server serves only site assets copied to public/. HTTP is required for JavaScript modules and JSON loading.
 
 ```sh
 npm test
 npm run build
 ```
 
-## Publish to GitHub Pages
+The GitHub Actions workflow runs tests, builds static assets and deploys to GitHub Pages on pushes to main or master. Pages uses GitHub Actions as its publishing source. All asset paths are relative for repository subpaths.
 
-Suggested repository: `anurag-eeiitd/iec-motor-frame-selector`.
+## Maintain data
 
-1. Create that repository and push this project's source files to its `main` or `master` branch.
-2. In **Settings → Pages → Build and deployment**, choose **GitHub Actions**.
-3. Run the **Deploy GitHub Pages** workflow, or push a change to trigger it.
-4. The expected URL after successful deployment is `https://anurag-eeiitd.github.io/iec-motor-frame-selector/`.
+The current comparison is in data/motor-catalogues.json. The original ABB extraction and document links remain in data/abb-frsm69a.json.
 
-The workflow checks the selector, prepares only the website assets, and deploys them. All asset paths are relative so project subpaths work. `public/` is generated and ignored. No account credentials or backend are needed by the website.
-
-## Maintain catalogue data
-
-The auditable data lives in `data/abb-frsm69a.json`. Each row records the source page and original document links. To reproduce extraction, install `pypdf` and `pdfplumber`, then run:
+To reproduce the import, install Python openpyxl, pypdf and pdfplumber. From the project root:
 
 ```sh
-python scripts/extract_catalogue.py "path/to/FRSM 69A w.e.f. 01.09.2026.pdf"
+python scripts/import_comparison.py "path/to/ABB_Innomotics_CG_IE3_IE4_10-50HP_Comparison.xlsx" --pdf-dir "path/to/catalogue-folder"
 ```
 
-Review any replacement catalogue visually before changing the data. Tests independently check all 50 motor codes against the six supplied screenshots, scope, paired kW values, page references, alternate entries, the special footnote, invalid inputs and non-interpolation.
+The importer reads but does not change the workbook, reconciles ABB values and links, and optionally checks listed Innomotics/CG codes and prices against the supplied PDFs. Review source pages before publishing a new catalogue edition.
 
-This is an independent selection aid, not an ABB product. ABB catalogue content remains attributable to ABB. Only ABB is included in this initial version.
+Tests check all 144 manufacturer/rating/pole/efficiency combinations, prices, original ABB codes and links, alternatives, special-order entries, missing ratings and invalid inputs.
+
+This is an independent selection aid. Manufacturer catalogue content remains attributable to its respective manufacturer.

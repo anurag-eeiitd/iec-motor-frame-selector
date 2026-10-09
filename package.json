@@ -1,8 +1,8 @@
 {
   "name": "iec-motor-frame-selector",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
-  "description": "ABB IEC motor frame lookup from FRSM69A, 10–50 HP, IE3/IE4.",
-  "scripts": { "build": "node scripts/build.mjs", "start": "node scripts/build.mjs && node scripts/serve.mjs", "test": "node --test tests/selector.test.mjs" }
+  "description": "Compare ABB, Innomotics and Crompton/CG IEC motor frames and prices, 10–50 HP, IE3/IE4.",
+  "scripts": { "build": "node scripts/build.mjs", "start": "node scripts/build.mjs && node scripts/serve.mjs", "test": "node --test tests/*.test.mjs" }
 }

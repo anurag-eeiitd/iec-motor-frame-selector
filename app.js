@@ -1,4 +1,4 @@
-import { RATINGS, selectMotors } from './selector.js';
+import { RATINGS, MANUFACTURERS, manufacturerLabel, selectMotors } from './selector.js';
 
 const $ = id => document.getElementById(id);
 const form = $('selector');
@@ -15,20 +15,29 @@ function element(tag, className, text) {
 }
 
 function selection() {
-  return { hp: $('power').value.trim() === '' ? NaN : Number($('power').value), poles: Number($('poles').value), efficiency: $('efficiency').value };
+  return { hp: $('power').value.trim() === '' ? NaN : Number($('power').value), poles: Number($('poles').value), efficiency: $('efficiency').value, manufacturer: $('manufacturer').value };
 }
+
+function selectedCompanies(input) { return input.manufacturer === 'all' ? MANUFACTURERS : [input.manufacturer]; }
+function selectedClasses(input) { return input.efficiency === 'both' ? ['IE3', 'IE4'] : [input.efficiency]; }
 
 function card(motor) {
   const card = element('article', 'motor-card');
   const header = element('div', 'motor-card-header');
-  header.append(element('span', 'class-tag', motor.efficiency), element('span', 'page-label', `ABB · page ${motor.sourcePage}`));
-  const label = element('h3', 'frame-label', 'ABB frame designation');
+  header.append(element('strong', 'company-name', manufacturerLabel(motor.manufacturer)), element('span', 'class-tag', motor.efficiency));
+  card.append(header);
+  if (motor.available === false) {
+    card.classList.add('unavailable');
+    card.append(element('p', 'unavailable-title', 'Not listed'), element('p', 'availability-note', 'This exact rating is not listed in the selected Innomotics 1LE7 family.'), element('p', 'motor-price', 'Frame and list price unavailable.'));
+    return card;
+  }
+  const label = element('h4', 'frame-label', 'IEC frame (comparison)');
   const frame = element('p', 'frame-value', motor.frame);
   const specs = element('div', 'motor-spec');
   specs.append(element('strong', '', `${motor.hp} HP / ${motor.kw.toFixed(2)} kW`), element('span', '', `${motor.poles} poles`));
-  const price = element('p', 'motor-price', 'Catalogue list price ');
+  const price = element('p', 'motor-price', 'Catalogue list price');
   price.append(element('strong', '', currency.format(motor.priceInr)));
-  card.append(header, label, frame, element('p', 'model-code', motor.model), specs, price);
+  card.append(label, frame, element('p', 'manufacturer-code', `Manufacturer frame: ${motor.manufacturerFrame}`), element('p', 'model-code', motor.model), specs, price, element('p', 'family-label', motor.series), element('p', 'page-label', `${motor.manufacturer === 'CG' ? 'Printed page' : 'Catalogue page'} ${motor.sourcePage}`));
   if (motor.notes.length) motor.notes.forEach(note => card.append(element('p', 'motor-note', note)));
   const docs = element('div', 'documents');
   for (const [key, title] of [['datasheet', 'Data sheet ↗'], ['drawing', 'GA drawing ↗'], ['terminalBox', 'Terminal box ↗']]) {
@@ -44,9 +53,17 @@ function card(motor) {
   return card;
 }
 
-function renderReference(poles, hp) {
+function renderReference(input) {
+  const { poles, hp } = input;
   $('reference-poles').textContent = `${poles} poles`;
   $('reference-rows').replaceChildren();
+  $('reference-headers').replaceChildren();
+  const headings = ['HP / kW', ...selectedCompanies(input).flatMap(company => selectedClasses(input).map(efficiency => `${manufacturerLabel(company)} ${efficiency}`))];
+  for (const title of headings) {
+    const th = element('th', '', title);
+    th.scope = 'col';
+    $('reference-headers').append(th);
+  }
   for (const rating of RATINGS) {
     const row = element('tr', rating === hp ? 'selected' : '');
     const cell = element('td');
@@ -55,9 +72,18 @@ function renderReference(poles, hp) {
     button.addEventListener('click', () => { $('power').value = rating; render(); });
     cell.append(button, element('span', 'kw', `${motors.find(m => m.hp === rating).kw.toFixed(2)} kW`));
     row.append(cell);
-    for (const efficiency of ['IE3', 'IE4']) {
-      const matches = motors.filter(m => m.hp === rating && m.poles === poles && m.efficiency === efficiency);
-      row.append(element('td', '', matches.map(m => m.frame + (m.notes.length ? '*' : '')).join(' / ')));
+    for (const company of selectedCompanies(input)) {
+      for (const efficiency of selectedClasses(input)) {
+        const matches = motors.filter(m => m.hp === rating && m.poles === poles && m.efficiency === efficiency && m.manufacturer === company);
+        const cell = element('td');
+        for (const motor of matches) {
+          const item = element('div', 'reference-entry');
+          item.append(element('strong', '', motor.available ? motor.frame : 'Not listed'));
+          if (motor.available) item.append(element('span', 'reference-price', currency.format(motor.priceInr)));
+          cell.append(item);
+        }
+        row.append(cell);
+      }
     }
     $('reference-rows').append(row);
   }
@@ -67,11 +93,11 @@ function render() {
   const input = selection();
   const selected = selectMotors(motors, input);
   $('power').setAttribute('aria-invalid', String(Boolean(selected.error)));
-  $('match-count').textContent = selected.motors.length ? `${selected.motors.length} ${selected.motors.length === 1 ? 'entry' : 'entries'}` : 'No match';
+  $('match-count').textContent = selected.motors.length ? `${selected.motors.length} ${selected.motors.length === 1 ? 'entry' : 'entries'}` : selected.error ? 'No match' : 'Not listed';
   const summary = $('selection-summary');
   summary.replaceChildren();
   if (Number.isFinite(input.hp)) summary.append(element('span', '', `${input.hp} HP`));
-  summary.append(element('span', '', `${input.poles} poles`), element('span', '', `${6000 / input.poles} RPM at 50 Hz`), element('span', '', input.efficiency === 'both' ? 'IE3 & IE4' : input.efficiency));
+  summary.append(element('span', '', `${input.poles} poles`), element('span', '', `${6000 / input.poles} RPM at 50 Hz`), element('span', '', input.efficiency === 'both' ? 'IE3 & IE4' : input.efficiency), element('span', '', input.manufacturer === 'all' ? 'All companies' : manufacturerLabel(input.manufacturer)));
   results.replaceChildren();
   $('result-caption').hidden = Boolean(selected.error);
   if (selected.error) {
@@ -90,12 +116,24 @@ function render() {
     }
     results.append(message);
   } else {
-    const grid = element('div', `result-grid${selected.motors.length === 1 ? ' single' : ''}`);
-    selected.motors.forEach(motor => grid.append(card(motor)));
-    results.append(grid);
+    const companies = selectedCompanies(input);
+    const entries = [...selected.motors, ...selected.unavailable];
+    for (const efficiency of selectedClasses(input)) {
+      const group = element('section', 'comparison-group');
+      group.setAttribute('aria-label', `${efficiency} comparison`);
+      group.append(element('h3', 'comparison-title', `${efficiency} frames & list prices`));
+      const grid = element('div', `result-grid${companies.length === 1 ? ' single' : ' compare-all'}`);
+      for (const company of companies) {
+        const column = element('div', 'manufacturer-column');
+        entries.filter(m => m.efficiency === efficiency && m.manufacturer === company).forEach(motor => column.append(card(motor)));
+        grid.append(column);
+      }
+      group.append(grid);
+      results.append(group);
+    }
   }
   lastSelection = JSON.stringify(input);
-  renderReference(input.poles, input.hp);
+  renderReference(input);
 }
 
 form.addEventListener('submit', event => { event.preventDefault(); render(); });
@@ -120,7 +158,7 @@ $('speed').addEventListener('input', () => { $('poles').value = $('speed').value
 
 async function load() {
   try {
-    const response = await fetch(new URL('./data/abb-frsm69a.json', import.meta.url));
+    const response = await fetch(new URL('./data/motor-catalogues.json', import.meta.url));
     if (!response.ok) throw new Error(`Catalogue HTTP ${response.status}`);
     const catalogue = await response.json();
     motors = catalogue.motors;
