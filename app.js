@@ -15,7 +15,7 @@ function element(tag, className, text) {
 }
 
 function selection() {
-  return { hp: $('power').value.trim() === '' ? NaN : Number($('power').value), poles: Number($('poles').value), efficiency: $('efficiency').value, manufacturer: $('manufacturer').value };
+  return { hp: /^\d+(?:\.\d+)?$/.test($('power').value.trim()) ? Number($('power').value) : NaN, poles: Number($('poles').value), efficiency: $('efficiency').value, manufacturer: $('manufacturer').value };
 }
 
 function selectedCompanies(input) { return input.manufacturer === 'all' ? MANUFACTURERS : [input.manufacturer]; }
@@ -28,10 +28,10 @@ function card(motor) {
   card.append(header);
   if (motor.available === false) {
     card.classList.add('unavailable');
-    card.append(element('p', 'unavailable-title', 'Not listed'), element('p', 'availability-note', 'This exact rating is not listed in the selected Innomotics 1LE7 family.'), element('p', 'motor-price', 'Frame and list price unavailable.'));
+    card.append(element('p', 'unavailable-title', 'Not listed'));
     return card;
   }
-  const label = element('h4', 'frame-label', 'IEC frame (comparison)');
+  const label = element('h4', 'frame-label', 'IEC frame');
   const frame = element('p', 'frame-value', motor.frame);
   const specs = element('div', 'motor-spec');
   specs.append(element('strong', '', `${motor.hp} HP / ${motor.kw.toFixed(2)} kW`), element('span', '', `${motor.poles} poles`));
@@ -99,12 +99,10 @@ function render() {
   if (Number.isFinite(input.hp)) summary.append(element('span', '', `${input.hp} HP`));
   summary.append(element('span', '', `${input.poles} poles`), element('span', '', `${6000 / input.poles} RPM at 50 Hz`), element('span', '', input.efficiency === 'both' ? 'IE3 & IE4' : input.efficiency), element('span', '', input.manufacturer === 'all' ? 'All companies' : manufacturerLabel(input.manufacturer)));
   results.replaceChildren();
-  $('result-caption').hidden = Boolean(selected.error);
   if (selected.error) {
     const message = element('div', 'status-message');
     message.append(element('strong', '', selected.error), element('p', '', 'Listed HP ratings: 10, 12.5, 15, 20, 25, 30, 40 and 50.'));
     if (selected.suggestions.length) {
-      message.append(element('p', '', 'Choose a nearby catalogue rating to look it up:'));
       const choices = element('div', 'suggestions');
       for (const rating of selected.suggestions) {
         const button = element('button', '', `${rating} HP`);
@@ -139,22 +137,15 @@ function render() {
 form.addEventListener('submit', event => { event.preventDefault(); render(); });
 form.addEventListener('input', () => {
   if (motors.length && lastSelection !== JSON.stringify(selection())) {
-    results.replaceChildren(element('p', 'status-message', 'Requirements changed. Select “Find frame” to update your result.'));
+    results.replaceChildren(element('p', 'status-message', 'Select Find frame to update.'));
     $('selection-summary').replaceChildren();
-    $('result-caption').hidden = true;
     $('match-count').textContent = 'Update needed';
     $('reference').open = false;
   }
 });
-for (const radio of document.querySelectorAll('[name="speed-mode"]')) {
-  radio.addEventListener('change', () => {
-    const speed = radio.value === 'speed';
-    $('pole-field').hidden = speed;
-    $('speed-field').hidden = !speed;
-  });
-}
-$('poles').addEventListener('change', () => { $('speed').value = $('poles').value; });
-$('speed').addEventListener('input', () => { $('poles').value = $('speed').value; });
+$('poles').addEventListener('change', () => {
+  $('calculated-speed').textContent = `${120 * 50 / Number($('poles').value)} RPM · 50 Hz`;
+});
 
 async function load() {
   try {

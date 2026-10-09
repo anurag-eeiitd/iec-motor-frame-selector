@@ -12,42 +12,28 @@
 </head>
 <body>
   <a class="skip-link" href="#selector">Skip to motor selector</a>
-  <header class="topbar">
-    <div class="brand"><span class="brand-mark" aria-hidden="true">P</span><span>Pankaj Electrical<span class="brand-sub">Motor selection tools</span></span></div>
-    <span class="edition">3 manufacturers</span>
-  </header>
   <main>
-    <div class="intro"><div class="eyebrow">Line-operated induction motors</div><h1>IEC motor frame selector<span class="title-dot">.</span></h1><p>Compare frames and catalogue prices from ABB, Innomotics and Crompton / CG.</p></div>
+    <div class="intro"><h1>IEC motor frame selector<span class="title-dot">.</span></h1></div>
     <div class="workspace">
       <section class="input-panel" aria-labelledby="input-title">
-        <div class="section-number">01 / Motor requirements</div>
         <h2 id="input-title">Select your motor</h2>
         <form id="selector" novalidate>
           <label for="power">Rated power <span>HP</span></label>
-          <div class="power-field"><input id="power" type="number" value="20" min="10" max="50" step="any" list="hp-ratings" inputmode="decimal" aria-describedby="power-help" required><span>HP</span></div>
-          <datalist id="hp-ratings"><option value="10"><option value="12.5"><option value="15"><option value="20"><option value="25"><option value="30"><option value="40"><option value="50"></datalist>
-          <p id="power-help" class="field-help">Catalogue range: 10–50 HP</p>
-          <fieldset class="mode-group"><legend>Select by</legend><div class="segmented"><label><input type="radio" name="speed-mode" value="poles" checked><span>Poles</span></label><label><input type="radio" name="speed-mode" value="speed"><span>Speed</span></label></div></fieldset>
-          <div id="pole-field"><label for="poles">Number of poles</label><select id="poles"><option value="2">2 poles · 3000 RPM</option><option value="4" selected>4 poles · 1500 RPM</option><option value="6">6 poles · 1000 RPM</option></select></div>
-          <div id="speed-field" hidden><label for="speed">Synchronous speed</label><select id="speed"><option value="2">3000 RPM · 2 poles</option><option value="4" selected>1500 RPM · 4 poles</option><option value="6">1000 RPM · 6 poles</option></select></div>
-          <p class="field-help">At 50 Hz. Actual running speed is lower.</p>
+          <div class="power-field"><input id="power" type="text" value="20" inputmode="decimal" required><span>HP</span></div>
+          <div id="pole-field"><label for="poles">Number of poles</label><select id="poles"><option value="2">2 poles</option><option value="4" selected>4 poles</option><option value="6">6 poles</option></select><output id="calculated-speed" for="poles">1500 RPM · 50 Hz</output></div>
           <div class="manufacturer-field"><label for="manufacturer">Manufacturer</label><select id="manufacturer"><option value="all">Compare all companies</option><option value="ABB">ABB</option><option value="Innomotics">Innomotics</option><option value="CG">Crompton / CG</option></select></div>
           <label for="efficiency">Efficiency requirement</label><select id="efficiency"><option value="both">Compare IE3 &amp; IE4</option><option value="IE3">IE3</option><option value="IE4">IE4</option></select>
           <button id="find-button" class="primary" type="submit" disabled>Find frame <span aria-hidden="true">→</span></button>
         </form>
-        <div class="fixed-spec"><span>Catalogue configuration</span><strong>415 V · 50 Hz · Foot mounted</strong><span>TEFC · IP55 · Continuous duty</span></div>
       </section>
       <section class="output-panel" aria-labelledby="output-title">
-        <div class="output-heading"><div><div class="section-number">02 / Catalogue match</div><h2 id="output-title">Frames &amp; price comparison</h2></div><span id="match-count" class="badge">Loading</span></div>
+        <div class="output-heading"><h2 id="output-title">Frames &amp; price comparison</h2><span id="match-count" class="badge">Loading</span></div>
         <div id="selection-summary" class="selection-summary"></div>
         <div id="results" aria-live="polite" aria-atomic="true"><p class="status-message">Loading catalogue entries…</p></div>
-        <p id="result-caption" class="result-caption" hidden>Prices are catalogue list prices in INR, before discounts and applicable taxes. IEC frames follow the supplied comparison sheet; verify mounting and shaft dimensions with each manufacturer.</p>
-        <details id="reference" class="reference"><summary>Browse ratings for <span id="reference-poles">4 poles</span><span class="disclosure" aria-hidden="true">+</span></summary><div class="table-scroll"><table><caption>Frames and list prices for the selected companies and efficiency classes. Choose an HP value to look it up.</caption><thead><tr id="reference-headers"></tr></thead><tbody id="reference-rows"></tbody></table></div></details>
-        <aside class="source-note"><span class="source-rule" aria-hidden="true"></span><div><strong>Catalogue sources</strong><p>ABB FRSM69A · 01 Sep 2026. Innomotics LP-210 · 14 Aug 2026. CG LTM27 · 02 Sep 2026.</p><details><summary>Product families, operating conditions &amp; source notes</summary><p>ABB: M2BAX Safe Area, IE3 pages 10–12 and IE4 pages 14–16. The smaller 12.5 HP / 4-pole IE3 option is limited to Class F temperature rise.</p><p>Innomotics: 1LE7 Severe Duty cast iron, IE3 CE-compliant range pages 18–19 and IE4 pages 15–16. “Not listed” refers to this selected family and exact rating.</p><p>CG: Premium Efficiency IE3 Cast Iron, printed page 15, and Super Premium IE4, printed page 14. The 10 HP / 2- and 4-pole IE4 entries use AXELERA on printed page 13, as directed by the Super Premium table. CG PDF page numbers are one higher than the printed numbers shown here.</p><p>The comparison covers foot-mounted, IP55, continuous / S1, 415 V, 50 Hz, 50°C ambient motors. Prices, frame codes, ordering references and product families come from the supplied comparison workbook and catalogues. Different product families may have different construction details and ordering conditions.</p><p>HP and kW retain the catalogue’s paired ratings. Only exact listed HP values are used. All alternatives and special-order notes are retained; missing frames or prices are never inferred. ABB document links are retained where provided in the PDF. This is an independent selection aid.</p></details></div></aside>
+        <details id="reference" class="reference"><summary>Browse ratings for <span id="reference-poles">4 poles</span><span class="disclosure" aria-hidden="true">+</span></summary><div class="table-scroll"><table aria-label="Frames and prices by rating"><thead><tr id="reference-headers"></tr></thead><tbody id="reference-rows"></tbody></table></div></details>
       </section>
     </div>
   </main>
-  <footer><span>Pankaj Electrical <span class="footer-divider">/</span> IEC frame selector</span><span>ABB · Innomotics · Crompton / CG · 10–50 HP · IE3 / IE4</span></footer>
   <noscript><p class="status-message">Enable JavaScript to use the motor frame selector.</p></noscript>
 </body>
 </html>
