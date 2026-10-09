@@ -93,11 +93,6 @@ function render() {
   const input = selection();
   const selected = selectMotors(motors, input);
   $('power').setAttribute('aria-invalid', String(Boolean(selected.error)));
-  $('match-count').textContent = selected.motors.length ? `${selected.motors.length} ${selected.motors.length === 1 ? 'entry' : 'entries'}` : selected.error ? 'No match' : 'Not listed';
-  const summary = $('selection-summary');
-  summary.replaceChildren();
-  if (Number.isFinite(input.hp)) summary.append(element('span', '', `${input.hp} HP`));
-  summary.append(element('span', '', `${input.poles} poles`), element('span', '', `${6000 / input.poles} RPM at 50 Hz`), element('span', '', input.efficiency === 'both' ? 'IE3 & IE4' : input.efficiency), element('span', '', input.manufacturer === 'all' ? 'All companies' : manufacturerLabel(input.manufacturer)));
   results.replaceChildren();
   if (selected.error) {
     const message = element('div', 'status-message');
@@ -138,8 +133,6 @@ form.addEventListener('submit', event => { event.preventDefault(); render(); });
 form.addEventListener('input', () => {
   if (motors.length && lastSelection !== JSON.stringify(selection())) {
     results.replaceChildren(element('p', 'status-message', 'Select Find frame to update.'));
-    $('selection-summary').replaceChildren();
-    $('match-count').textContent = 'Update needed';
     $('reference').open = false;
   }
 });
@@ -157,7 +150,6 @@ async function load() {
     render();
   } catch (error) {
     results.replaceChildren(element('p', 'status-message', 'The catalogue could not be loaded. Reload the page to try again.'));
-    $('match-count').textContent = 'Unavailable';
     $('reference').hidden = true;
     console.error(error);
   }
